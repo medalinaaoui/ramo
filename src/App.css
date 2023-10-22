@@ -1,0 +1,127 @@
+.App {
+  min-height: 100vh;
+  background-color: #050f22;
+}
+
+.the-main-header {
+  background-image: linear-gradient(
+    to right top,
+    #000000,
+    #0e0006,
+    #16010f,
+    #1a0217,
+    #1b051f,
+    #210d2b,
+    #271137,
+    #2d1645,
+    #411c59,
+    #58226c,
+    #70267e,
+    #8b2890
+  );
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+@media (max-width: 639px) {
+  .App {
+    font-size: 0.7rem;
+    line-height: 1.9rem;
+  }
+  .thefirstimage {
+    width: 18rem;
+    height: 18rem;
+  }
+}
+
+.thefirstimage {
+  filter: brightness(0.8);
+  animation: moveimage 4s ease infinite;
+}
+
+@keyframes moveimage {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.the-brands img {
+  filter: grayscale(100%);
+  transition-duration: 0.2s;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.the-brands img:hover {
+  filter: grayscale(0);
+  cursor: pointer;
+}
+
+.bg-that-i-want {
+  background-image: linear-gradient(
+    to left top,
+    #f5fcff,
+    #e5e9ed,
+    #d5d7db,
+    #c4c5c8,
+    #b4b4b6,
+    #b0acba,
+    #b2a2ba,
+    #b997b5,
+    #de8aad,
+    #fe7e8d,
+    #ff7c5b,
+    #ff8c00
+  );
+}
+
+.gb-what-is-gpt {
+  background-image: radial-gradient(
+    circle,
+    #18193b,
+    #17183e,
+    #151840,
+    #141743,
+    #121645,
+    #111646,
+    #0f1648,
+    #0d1649,
+    #0a174a,
+    #07184b,
+    #03194b,
+    #001a4c
+  );
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.line-above-head::before {
+  content: "";
+  width: 2.375rem;
+  height: 0.1875rem;
+  background-color: violet;
+  position: absolute;
+  top: -15%;
+  left: 0px;
+}
+
+.features-section-articles article {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.yellowcard {
+  border-radius: 0.67025rem;
+  border: 1px solid #000;
+  background: linear-gradient(90deg, #ae67fa 1.84%, #f49867 102.67%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
